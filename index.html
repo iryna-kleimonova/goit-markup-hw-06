@@ -54,37 +54,90 @@
           </ul>
         </address>
 
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger-btn" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg></button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close">Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Adress</address>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="menu-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+          </nav>
+          <address class="modal-menu-adress">
+            <ul class="menu-adress-list">
+            <li class="menu-adress-item">
+              <a class="menu-adress-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-adress-item">
+              <a class="menu-adress-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          </address>
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
       <!-- hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- features -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list">
@@ -138,9 +191,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- team -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -318,7 +371,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- portfolio -->
       <!-- <section class="portfolio" id="portfolio">
         <div class="container">
@@ -599,6 +652,7 @@
     </div>
 
     <script src="./js/modal.js"></script>  -->
+    <script src="./js/menu.js"></script> 
   </body>
 </html>
   </body>

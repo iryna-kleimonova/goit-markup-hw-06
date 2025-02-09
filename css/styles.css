@@ -371,12 +371,22 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/office.jpg);
+    url(../images/office-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 
   margin: 0 auto;
   background-size: cover;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2x) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-mob-2x.jpg);
+  }
 }
 
 .hero-title {
@@ -421,6 +431,22 @@ button {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-tab-1x.jpg);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-tab-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -442,6 +468,21 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-1x.jpg);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -899,6 +940,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer-container {
     gap: 72px 24px;
+    align-items: baseline;
   }
 
   .footer-text {
